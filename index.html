@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gem Clicker</title>
+    <link rel="stylesheet" href="styles.css " />
+  </head>
+  <body>
+    <h1>Gem Clicker</h1>
+    <div id="gemCounter">Gems: 0</div>
+
+    <div id="gem">💎</div>
+
+    <div id="upgrades">
+      <div class="upgrade">
+        <h3>Sparkly Polish</h3>
+        <p>Each click gives +1 gem</p>
+        <p>Cost: <span id="upgrade1Cost">10</span> gems</p>
+        <p>Level: <span id="upgrade1Level">0</span></p>
+        <br />
+        <button id="upgrade1Btn" onclick="buyUpgrade(1)">Buy</button>
+      </div>
+
+      <div class="upgrade">
+        <h3>Gem Magnet</h3>
+        <p>Auto-clicks every 10 seconds</p>
+        <p>Cost: <span id="upgrade2Cost">50</span> gems</p>
+        <p>Level: <span id="upgrade2Level">0</span></p>
+        <button id="upgrade2Btn" onclick="buyUpgrade(2)">Buy</button>
+      </div>
+
+      <div class="upgrade">
+        <h3>Rainbow Power</h3>
+        <p>2x gems per click</p>
+        <p>Cost: <span id="upgrade3Cost">100</span> gems</p>
+        <p>Level: <span id="upgrade3Level">0</span></p>
+        <br />
+        <button id="upgrade3Btn" onclick="buyUpgrade(3)">Buy</button>
+      </div>
+    </div>
+
+    <div id="autoClickerStatus">No auto-clickers yet!</div>
+
+    <footer>
+      Click the gem to collect gems! Buy upgrades to get more gems faster!
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
